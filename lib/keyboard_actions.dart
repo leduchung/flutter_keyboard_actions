@@ -18,7 +18,7 @@ const Duration _timeToDismiss = Duration(milliseconds: 110);
 /// Breathing room between the bar and the system keyboard on iOS, where the
 /// keyboard's rounded top corners otherwise look like they're touching a
 /// flat-edged bar.
-const double _kKeyboardGap = 8.0;
+const double _kKeyboardGap = 0.0; //8.0;
 
 enum KeyboardActionsPlatform {
   ANDROID,
