@@ -348,9 +348,7 @@ class KeyboardActionstate extends State<KeyboardActions>
       // it. Rounding the bar to match and lifting it off the keyboard by a
       // small gap makes it read as its own floating element instead of a
       // disconnected strip touching the keyboard.
-      final barRadius = PlatformCheck.isIOS26OrAbove && keyboardShowing
-          ? const Radius.circular(20)
-          : Radius.zero;
+      final barRadius = Radius.zero;
       final keyboardGap =
           PlatformCheck.isIOS26OrAbove && keyboardShowing ? _kKeyboardGap : 0.0;
       return Stack(
